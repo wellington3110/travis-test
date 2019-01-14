@@ -25,4 +25,3 @@ deploy:
   on:
     repo: wellington3110/travis-test
     branch: master
-    tags: true
