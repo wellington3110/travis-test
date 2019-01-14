@@ -14,7 +14,6 @@ branches:
 before_deploy:
 - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
 - git tag $TRAVIS_TAG
-- go install
 
 deploy:
   file: ${TRAVIS_HOME}/gopath/bin/travis-test
